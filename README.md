@@ -1,81 +1,138 @@
-# Turborepo starter
+### TAGS
 
-This is an official starter Turborepo.
+- **JavaScript Development** > **Monorepo Management** > **Package Management**
 
-## Using this example
+---
 
-Run the following command:
+### TURBOREPO
 
-```sh
-npx create-turbo@latest
+**Overview**: Turborepo is a monorepo tool for JavaScript and TypeScript that facilitates the management of multiple packages within a single repository.
+
+#### KEY FEATURES
+
+1. 🗄️ **Build Cache**
+
+   - **Description**: Stores the results of previous builds.
+   - **How It Saves Time**: When a build is rerun, it checks if the inputs (source code, dependencies, etc.) have changed. If not, it reuses the cached result, avoiding unnecessary recompilations. This allows only the parts of the code that actually changed to be reprocessed.
+
+2. 🏗️ **Task Pipeline**
+
+   - **Description**: Executes tasks in parallel and in the correct order based on dependencies.
+   - **How It Saves Time**: Optimizes execution time by making the most of system resources. For example, if several packages depend on each other, Turborepo knows which can be built simultaneously and which need to be built sequentially.
+
+3. ⚙️ **Incremental Builds**
+
+   - **Description**: Recompiles only what has changed.
+   - **How It Saves Time**: Monitors code changes and recompiles only the modified components, avoiding the recompilation of the entire project. For instance, if only one module is altered, only that module will be reprocessed, while the rest of the code remains intact.
+
+#### AUTHORS AND MAINTAINERS
+
+- **Creator**: The team at [Vercel](https://vercel.com/)
+- **Maintenance**: Actively maintained by Vercel, ensuring frequent updates and continuous support.
+
+#### FOLDER STRUCTURE
+
+```bash
+my-monorepo/
+├── apps/
+│   └── <your-apps>/
+├── packages/
+│   └── <your-packages>/
+├── node_modules/
+├── package.json
+├── pnpm-workspace.yaml
+└── turbo.json
 ```
 
-## What's inside?
+---
 
-This Turborepo includes the following packages/apps:
+### PNPM
 
-### Apps and Packages
+**Overview**: pnpm is a package manager for JavaScript that stands out for its speed and space efficiency.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+#### KEY FEATURES
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+1. ⚡ **Fast Installations**
 
-### Utilities
+   - **Description**: Uses a global cache and symbolic links to speed up installations.
+   - **How It Saves Time**: Instead of downloading and storing a complete copy of each package for each project, pnpm stores a single global copy and creates symbolic links. This reduces download and installation time since packages are already available locally.
 
-This Turborepo has some additional tools already setup for you:
+2. 🗂️ **Space Efficiency**
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+   - **Description**: Avoids duplication of packages on disk by using a storage structure that shares common packages between projects.
+   - **How It Saves Space**: Multiple projects can share the same dependencies without needing to store multiple copies, significantly saving disk space.
 
-### Build
+3. 🔒 **Security**
 
-To build all apps and packages, run the following command:
+   - **Description**: Ensures the integrity and consistency of dependencies through rigorous checks.
+   - **How It Ensures Safety**: By using a storage format that isolates each project's dependencies, pnpm avoids conflicts and ensures that each project has exactly the versions of dependencies it needs.
 
-```
-cd my-turborepo
-pnpm build
-```
+#### AUTHORS AND MAINTAINERS
 
-### Develop
+- **Creator**: Zoltan Kochan
+- **Maintenance**: Maintained by an active community of developers, with contributions from companies and independent developers. Available on [GitHub](https://github.com/pnpm/pnpm).
 
-To develop all apps and packages, run the following command:
+#### FOLDER STRUCTURE
 
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+```bash
+my-monorepo/
+├── apps/
+│   └── <your-apps>/
+├── packages/
+│   └── <your-packages>/
+├── node_modules/
+├── package.json
+├── pnpm-workspace.yaml
+└── turbo.json
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+---
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+### HOW THEY RELATE
 
-```
-npx turbo link
-```
+**Combination of Technologies**: When you use Turborepo with pnpm, you combine the advantages of efficient multi-package management with a fast and economical package manager. Turborepo helps orchestrate and organize packages within the monorepo, while pnpm efficiently manages the installation and linking of dependencies.
 
-## Useful Links
+---
 
-Learn more about the power of Turborepo:
+### GETTING STARTED
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+**Step-by-Step Setup**:
+
+1. **Install pnpm globally**:
+
+   ```sh
+   npm install -g pnpm
+   ```
+
+2. **Create a new directory for your repository and navigate to it**:
+
+   ```sh
+   mkdir my-monorepo
+   cd my-monorepo
+   ```
+
+3. **Initialize a new Turborepo project**:
+
+   ```sh
+   npx create-turbo@latest
+   ```
+
+   - Follow the interactive prompts to set up Turborepo. This will create the basic structure of your monorepo.
+
+4. **Configure pnpm as the package manager**:
+
+   - Create a `pnpm-workspace.yaml` file at the root of your repository. This file defines which folders contain packages that pnpm should manage.
+
+   ```yaml
+   packages:
+     - "packages/*"
+     - "apps/*"
+   ```
+
+5. **Install dependencies with pnpm**:
+
+   ```sh
+   pnpm install
+   ```
+
+**Conclusion**: You should now have a Turborepo repository set up using pnpm as the package manager. From here, you can add packages and applications within the `packages` and `apps` folders and manage their dependencies efficiently.
