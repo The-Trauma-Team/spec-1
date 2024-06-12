@@ -1,5 +1,5 @@
 {
-  "extends": "@yrnana/tsconfig/node.json",
+  "extends": "@ciandt/typescript-config/node.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src"

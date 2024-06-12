@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@yrnana/eslint-config/library'],
+  extends: ['@ciandt/eslint-config/library'],
 };

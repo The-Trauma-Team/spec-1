@@ -1,4 +1,4 @@
 {
-  "extends": "@yrnana/tsconfig/library.json",
+  "extends": "@ciandt/typescript-config/library.json",
   "include": ["src"]
 }

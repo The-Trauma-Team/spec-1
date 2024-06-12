@@ -1,1 +1,1 @@
-# @yrnana/foo
+# @ciandt/foo
