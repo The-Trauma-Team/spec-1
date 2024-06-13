@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@viniciusvinna/eslint-config/library'],
+  extends: ['@viniciusvinnatest/eslint-config/library'],
 };

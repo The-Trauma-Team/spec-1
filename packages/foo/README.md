@@ -1,1 +1,1 @@
-# @viniciusvinna/foo
+# @viniciusvinnatest/foo

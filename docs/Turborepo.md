@@ -18,9 +18,9 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@viniciusvinna/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@viniciusvinna/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@viniciusvinna/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@viniciusvinnatest/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@viniciusvinnatest/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@viniciusvinnatest/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
