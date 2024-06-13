@@ -1,5 +1,5 @@
 {
-  "extends": "@viniciusvinnatest/typescript-config/nextjs.json",
+  "extends": "@vinicius.vinna/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {

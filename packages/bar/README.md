@@ -1,1 +1,1 @@
-# @viniciusvinnatest/bar
+# @vinicius.vinna/bar

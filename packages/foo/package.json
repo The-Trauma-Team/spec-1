@@ -1,5 +1,5 @@
 {
-  "name": "@viniciusvinnatest/foo",
+  "name": "@vinicius.vinna/foo",
   "version": "0.0.1",
   "license": "MIT",
   "files": [
@@ -24,9 +24,9 @@
   "devDependencies": {
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
-    "@viniciusvinnatest/eslint-config": "workspace:*",
-    "@viniciusvinnatest/typescript-config": "workspace:*",
-    "@viniciusvinnatest/tsup": "workspace:*",
+    "@vinicius.vinna/eslint-config": "workspace:*",
+    "@vinicius.vinna/typescript-config": "workspace:*",
+    "@vinicius.vinna/tsup": "workspace:*",
     "react": "^18.2.0",
     "tsup": "7.2.0",
     "typescript": "^5.2.2"

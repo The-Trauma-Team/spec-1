@@ -22,7 +22,7 @@ importers:
 
   apps/docs:
     dependencies:
-      "@viniciusvinnatest/ui":
+      "@vinicius.vinna/ui":
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -35,10 +35,10 @@ importers:
         specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522)
     devDependencies:
-      "@viniciusvinnatest/eslint-config":
+      "@vinicius.vinna/eslint-config":
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../../packages/typescript-config
       "@types/node":
@@ -68,7 +68,7 @@ importers:
 
   apps/web:
     dependencies:
-      "@viniciusvinnatest/ui":
+      "@vinicius.vinna/ui":
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -81,10 +81,10 @@ importers:
         specifier: 19.0.0-rc-f994737d14-20240522
         version: 19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522)
     devDependencies:
-      "@viniciusvinnatest/eslint-config":
+      "@vinicius.vinna/eslint-config":
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../../packages/typescript-config
       "@types/node":
@@ -114,13 +114,13 @@ importers:
 
   packages/bar:
     devDependencies:
-      "@viniciusvinnatest/eslint-config":
+      "@vinicius.vinna/eslint-config":
         specifier: workspace:*
         version: link:../eslint-config
-      "@viniciusvinnatest/tsup":
+      "@vinicius.vinna/tsup":
         specifier: workspace:*
         version: link:../tsup-config
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../typescript-config
       "@types/node":
@@ -165,13 +165,13 @@ importers:
 
   packages/foo:
     devDependencies:
-      "@viniciusvinnatest/eslint-config":
+      "@vinicius.vinna/eslint-config":
         specifier: workspace:*
         version: link:../eslint-config
-      "@viniciusvinnatest/tsup":
+      "@vinicius.vinna/tsup":
         specifier: workspace:*
         version: link:../tsup-config
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../typescript-config
       "@types/node":
@@ -192,7 +192,7 @@ importers:
 
   packages/tsup-config:
     devDependencies:
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../typescript-config
       "@types/node":
@@ -218,10 +218,10 @@ importers:
 
   packages/ui:
     devDependencies:
-      "@viniciusvinnatest/eslint-config":
+      "@vinicius.vinna/eslint-config":
         specifier: workspace:*
         version: link:../eslint-config
-      "@viniciusvinnatest/typescript-config":
+      "@vinicius.vinna/typescript-config":
         specifier: workspace:*
         version: link:../typescript-config
       "@turbo/gen":

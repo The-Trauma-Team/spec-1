@@ -15,7 +15,7 @@ export const baseConfig = (
     string,
     any
   >;
-  const libraryName: string = pkg.name.replace(/^@viniciusvinnatest\//g, '');
+  const libraryName: string = pkg.name.replace(/^@vinicius.vinna\//g, '');
 
   return defineConfig((options) => {
     const commonOptions: Options = {

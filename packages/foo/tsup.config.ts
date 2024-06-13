@@ -1,3 +1,3 @@
-import { baseConfig } from '@viniciusvinnatest/tsup';
+import { baseConfig } from '@vinicius.vinna/tsup';
 
 export default baseConfig();

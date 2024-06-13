@@ -1,5 +1,5 @@
 {
-  "extends": "@viniciusvinnatest/typescript-config/node.json",
+  "extends": "@vinicius.vinna/typescript-config/node.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src"

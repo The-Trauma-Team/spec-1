@@ -1,5 +1,5 @@
 {
-  "name": "@viniciusvinnatest/ui",
+  "name": "@vinicius.vinna/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -12,8 +12,8 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@viniciusvinnatest/eslint-config": "workspace:*",
-    "@viniciusvinnatest/typescript-config": "workspace:*",
+    "@vinicius.vinna/eslint-config": "workspace:*",
+    "@vinicius.vinna/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
