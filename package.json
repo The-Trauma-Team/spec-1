@@ -2,7 +2,7 @@
   "name": "spec-1",
   "private": true,
   "scripts": {
-    "build": "turbo build --cache-dir=.turbo",
+    "build": "turbo build",
     "changeset": "changeset",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",

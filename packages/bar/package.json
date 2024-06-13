@@ -2,32 +2,37 @@
   "name": "@ciandt/bar",
   "version": "0.0.1",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/bar.cjs",
-      "import": "./dist/bar.mjs"
-    },
-    "./package.json": "./package.json"
-  },
-  "main": "./dist/bar.cjs",
-  "module": "./dist/bar.mjs",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
+  "main": "./dist/foo.cjs",
+  "module": "./dist/foo.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/foo.cjs",
+      "import": "./dist/foo.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
     "@ciandt/eslint-config": "workspace:*",
     "@ciandt/typescript-config": "workspace:*",
     "@ciandt/tsup": "workspace:*",
+    "react": "^18.2.0",
     "tsup": "7.2.0",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">= 18"
   },
   "publishConfig": {
     "access": "public"
