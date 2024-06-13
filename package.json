@@ -3,12 +3,16 @@
   "private": true,
   "scripts": {
     "build": "turbo build --cache-dir=.turbo",
+    "changeset": "changeset",
     "dev": "turbo dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "release": "turbo build --filter=packages^... && changeset publish",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "@changesets/cli": "^2.27.5",
+    "prettier": "^3.3.2",
     "turbo": "latest",
     "typescript": "^5.4.5"
   },
