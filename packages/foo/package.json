@@ -17,7 +17,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "eslint .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
