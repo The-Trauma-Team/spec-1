@@ -1,5 +1,5 @@
 {
-  "name": "@ciandt/ui",
+  "name": "@viniciusvinna/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -12,8 +12,8 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@ciandt/eslint-config": "workspace:*",
-    "@ciandt/typescript-config": "workspace:*",
+    "@viniciusvinna/eslint-config": "workspace:*",
+    "@viniciusvinna/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",

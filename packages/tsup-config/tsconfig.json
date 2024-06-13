@@ -1,5 +1,5 @@
 {
-  "extends": "@ciandt/typescript-config/node.json",
+  "extends": "@viniciusvinna/typescript-config/node.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src"

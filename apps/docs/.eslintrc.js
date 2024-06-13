@@ -1,7 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  extends: ["@ciandt/eslint-config/next.js"],
+  extends: ["@viniciusvinna/eslint-config/next.js"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,

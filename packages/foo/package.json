@@ -1,5 +1,5 @@
 {
-  "name": "@ciandt/foo",
+  "name": "@viniciusvinna/foo",
   "version": "0.0.1",
   "license": "MIT",
   "files": [
@@ -24,9 +24,9 @@
   "devDependencies": {
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
-    "@ciandt/eslint-config": "workspace:*",
-    "@ciandt/typescript-config": "workspace:*",
-    "@ciandt/tsup": "workspace:*",
+    "@viniciusvinna/eslint-config": "workspace:*",
+    "@viniciusvinna/typescript-config": "workspace:*",
+    "@viniciusvinna/tsup": "workspace:*",
     "react": "^18.2.0",
     "tsup": "7.2.0",
     "typescript": "^5.2.2"

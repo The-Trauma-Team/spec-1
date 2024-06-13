@@ -1,3 +1,3 @@
-import { baseConfig } from '@ciandt/tsup';
+import { baseConfig } from '@viniciusvinna/tsup';
 
 export default baseConfig();

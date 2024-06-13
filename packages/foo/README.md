@@ -1,1 +1,1 @@
-# @ciandt/foo
+# @viniciusvinna/foo
