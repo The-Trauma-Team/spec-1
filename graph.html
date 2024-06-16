@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graph</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2-pre.1/viz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2-pre.1/full.render.js"></script>
+  <script>
+const s = `
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] @vinicius.vinna/bar#build" -> "[root] @vinicius.vinna/eslint-config#build"
+		"[root] @vinicius.vinna/bar#build" -> "[root] @vinicius.vinna/tsup#build"
+		"[root] @vinicius.vinna/bar#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] @vinicius.vinna/eslint-config#build" -> "[root] ___ROOT___"
+		"[root] @vinicius.vinna/foo#build" -> "[root] @vinicius.vinna/eslint-config#build"
+		"[root] @vinicius.vinna/foo#build" -> "[root] @vinicius.vinna/tsup#build"
+		"[root] @vinicius.vinna/foo#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] @vinicius.vinna/tsup#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] @vinicius.vinna/typescript-config#build" -> "[root] ___ROOT___"
+		"[root] @vinicius.vinna/ui#build" -> "[root] @vinicius.vinna/eslint-config#build"
+		"[root] @vinicius.vinna/ui#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] docs#build" -> "[root] @vinicius.vinna/eslint-config#build"
+		"[root] docs#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] docs#build" -> "[root] @vinicius.vinna/ui#build"
+		"[root] web#build" -> "[root] @vinicius.vinna/eslint-config#build"
+		"[root] web#build" -> "[root] @vinicius.vinna/typescript-config#build"
+		"[root] web#build" -> "[root] @vinicius.vinna/ui#build"
+	}
+}
+
+`.replace(/\_\_\_ROOT\_\_\_/g, "Root").replace(/\[root\]/g, "");new Viz().renderSVGElement(s).then(el => document.body.appendChild(el)).catch(e => console.error(e));
+  </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
     "changeset": "changeset",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "graph": "npx turbo run build --graph=graph.pdf",
+    "graph": "npx turbo run build --graph=graph.html",
     "lint": "turbo lint",
     "release": "turbo build && changeset publish",
     "version-packages": "turbo run build && changeset version && changeset publish"
