@@ -12,6 +12,8 @@
 
 **Built in**: Node.js, TypeScript, Rust
 
+**Responsibility**: Turborepo orchestrates and organizes packages within a monorepo, ensuring efficient build processes and task management.
+
 #### KEY FEATURES
 
 1. 🗄️ **Build Cache**
@@ -38,7 +40,7 @@
 #### FOLDER STRUCTURE
 
 ```bash
-my-monorepo/
+spec-1/
 ├── apps/
 │   └── <your-apps>/
 ├── packages/
@@ -56,6 +58,8 @@ my-monorepo/
 **Overview**: pnpm is a package manager for JavaScript that stands out for its speed and space efficiency.
 
 **Built in**: Node.js, TypeScript, Rust
+
+**Responsibility**: pnpm manages the installation and linking of dependencies in a highly efficient manner, reducing duplication and improving installation speeds.
 
 #### KEY FEATURES
 
@@ -83,7 +87,7 @@ my-monorepo/
 #### FOLDER STRUCTURE
 
 ```bash
-my-monorepo/
+spec-1/
 ├── apps/
 │   └── <your-apps>/
 ├── packages/
@@ -101,6 +105,8 @@ my-monorepo/
 **Overview**: Changesets is a tool to manage versioning and changelogs with a focus on monorepos. It helps you publish your libraries consistently and reliably.
 
 **Built in**: Node.js, TypeScript
+
+**Responsibility**: Changesets handles versioning and publishing of packages, ensuring consistent and reliable releases with automatic changelog generation.
 
 #### KEY FEATURES
 
@@ -128,7 +134,7 @@ my-monorepo/
 #### FOLDER STRUCTURE
 
 ```bash
-my-monorepo/
+spec-1/
 ├── .changeset/
 │   └── <changes files>/
 ├── apps/
@@ -172,8 +178,8 @@ my-monorepo/
 2. **Create a new directory for your repository and navigate to it**:
     
     ```sh
-    mkdir my-monorepo
-    cd my-monorepo
+    mkdir spec-1
+    cd spec-1
     ```
     
 3. **Initialize a new Turborepo project**:
