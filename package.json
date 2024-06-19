@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "changeset": "changeset",
+    "changeset": "changeset version",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "graph": "npx turbo run build --graph=graph.html",
