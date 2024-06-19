@@ -1,5 +1,11 @@
 # @vinicius.vinna/foo
 
+## 1.0.0
+
+### Major Changes
+
+- 27cd546: just a test
+
 ## 0.0.1
 
 ### Patch Changes
