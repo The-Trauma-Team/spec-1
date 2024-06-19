@@ -1,0 +1,40 @@
+{
+  "name": "@vinicius.vinna/sussu",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/sussu.cjs",
+  "module": "./dist/sussu.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/sussu.cjs",
+      "import": "./dist/sussu.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
+    "@vinicius.vinna/eslint-config": "workspace:*",
+    "@vinicius.vinna/typescript-config": "workspace:*",
+    "@vinicius.vinna/tsup": "workspace:*",
+    "react": "^18.2.0",
+    "tsup": "7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">= 18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
