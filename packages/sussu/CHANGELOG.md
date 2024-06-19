@@ -1,5 +1,11 @@
 # @vinicius.vinna/foo
 
+## 1.0.1
+
+### Patch Changes
+
+- a9e6ad8: ok
+
 ## 1.0.0
 
 ### Major Changes
