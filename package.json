@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "changeset": "changeset version",
+    "changeset:status": "changeset status --since=main",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "graph": "npx turbo run build --graph=graph.html",
